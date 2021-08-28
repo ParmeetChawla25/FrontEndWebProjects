@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(LONDON.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    color:white;
+    position: absolute;
+    top:25%;
+    left: 35%;
+}
+.container h1{
+    font-family: 'Heebo', sans-serif;
+    width: 40;
+    font-size: 40px;
+    margin-bottom: 43px;
+    padding: 13px 0px;
+    border-bottom:2px solid purple;
+    display:inline-block ;
+}
+.box{
+    width:100%;
+    border-bottom: 2px solid purple;
+    margin: 23px 0px;
+}
+.box input{
+    background: none;
+    width:75%;
+    margin: 8px 0px;
+    padding: 3px 6px;
+    border:none;
+    outline:none;
+    color:white;
+    font-size: 20px;
+}
+.box i{
+    width:25px;
+    text-align: center;
+}
+.btn{
+    cursor: pointer;
+    outline: none;
+    width:none;
+    margin:12px 0;
+    padding: 6px;
+    border-radius: 10px;
+    border:2px solid purple;
+    font-size: 18px;
+    background: none;
+    color: white;
+    padding: 12px 21px;
+    font-weight: bold;
+}
+.btn:hover{
+    opacity:0.5;
+    cursor: pointer;
+    outline: none;
+    width:none;
+    margin:12px 0;
+    padding: 6px;
+    border-radius: 10px;
+    border:2px solid purple;
+    font-size: 18px;
+    background: white;
+    color: purple;
+    padding: 12px 21px;
+    font-weight: bold;
+}
