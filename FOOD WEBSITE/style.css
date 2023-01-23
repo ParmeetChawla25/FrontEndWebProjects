@@ -181,28 +181,126 @@ footer{
     background: black;
     color: white;
     padding: 9px 20px;
+    height: 260px;
+    
+}
+form{
+    width: 650;
+    height: 350px;
 }
 #contact-box{
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom:34px ;
+    padding: 34px;
 }
 #contact-box input{
-    
+    padding: 2%;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: black;
+
 } 
+.nep{
+    display:flex;
+    justify-content: left;
+
+
+}
+#contact-box{
+    width: 90%;
+    
+    margin-bottom: 0;
+}
 #contact-box form{
-    width: 40%;
+    width: 65%;
 } 
 #contact-box label{
-    font-size: 1.3rem;
+    font-size: 1rem;
+
     font-family: 'Bree Serif', serif;
 }
   
 #contact-box textarea{
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 9px;
-    font-size: 1.1rem;
+    width: 200%;
+    padding: 2%;
+    height: 200px;
+    border-radius: 3px;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
 }
+
+.form-group-1, .form-group-2, .form-group-3{
+    display: inline-block;
+    margin-right: 13.3%;
+
+}
+.form-group-4{
+    margin-bottom: 4%;
+}
+.socials , .form-group-4{
+    display: inline-block;
+}
+.socials{
+  
+    padding-top: 0px;
+    width: 20px;
+    margin-left: 100%;
+    margin-top:0%;
+    margin-bottom: 0%;
+    text-decoration: none;
+    position:relative;
+    left:0%;
+    top: -300px;
+}
+
+.insta, .lin, .discord, .telegram {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 110%;
+    padding-left: 10%;
+    width: 30px;
+}
+.github{
+    padding-bottom: 0%;
+    padding-left: 10%;
+    width: 30px;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:center;
+	width: 110%;
+	border: rgb(0, 0, 0) solid;
+    border-width: 3px;
+	cursor:pointer;
+	background-color: #ffffff;
+	color:rgb(0, 0, 0);
+	font-size:24px;
+	padding-top:22px;
+   
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+  margin-top:-4px;
+  font-weight:700;
+  z-index: 10;
+  position: relative;
+  top: -290px;
+ 
+}
+
+#button-blue:hover{
+	background-color: rgb(0, 0, 0,0);
+	color: #ffffff;
+    
+}
+	
+
+	
+
+
+
 
