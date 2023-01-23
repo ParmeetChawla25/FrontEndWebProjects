@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Exo&family=Fira+Sans:wght@300&display=swap');
+* {
+    font-family:Exo, Fira sans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+  }
+input::selection{
+  background-color: rgb(237, 237, 237);
+}
+  :root {
+    --max-width-all: 450px;
+  }
+  a {
+    text-decoration: none;
+  }
+  label {
+    font-weight: 500;
+  }
+  
+p {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 2rem auto;
+    padding: 0.5rem;
+    background-color: rgb(218, 218, 218);
+    max-width: 769px;
+    border-left: 7px solid rgb(0, 0, 0);
+    height: auto;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 1rem;
+    max-width: var(--max-width-all);
+  }
+  .header__text {
+    font-size: 2rem;
+    text-rendering: geometricPrecision;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0 1rem 1rem;
+  }
+  .header__title {
+    margin: 1rem 0rem;
+  }
+
+  .header__note {
+  margin: 1rem;
+  font-size: 0.8rem;
+}
+.header__links {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+   
+  }
+  .header__logo {
+    width: 100px;
+    padding-left: 1.5%;
+    position: relative;
+  }
+  .header__logo:hover{
+    bottom: 2px;
+  }    
+  .logo {
+    margin-left: 0.5rem;
+    width: 20px;
+    position:relative;
+    
+    
+  }
+  .logo:hover{
+    top: -2px;
+  }
+  /* forms */
+hr{
+  
+}
+
+.container {
+    box-shadow: #fbfbfb;
+  }
+  
+.list__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .list__item {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    width: 98%;
+    max-width: var(--max-width-all);
+  }
+  
+  .item__label {
+    margin-left: 1rem;
+  }
+  
+  .item__input {
+    border-radius: 3.5px;
+    border-color: #000000;
+    border-style: solid;
+    margin: 0;
+    padding: 0.5rem;
+    width: 98%;
+  }
+  
+  /* Selector section */
+  
+  .container__selectors {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem 1rem;
+    max-width: var(--max-width-all);
+  }
+  
+  .selectors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .selectors__title {
+    font-weight: 500;
+    padding: 0.3rem 0;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  /* Message section */
+  
+  .message-area {
+    display: flex;
+    flex-direction: column;
+  
+    margin: 0.5rem 0 0 1rem;
+  }
+  
+  .subjectDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subject__label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    padding-bottom: 0.3rem;
+  }
+  
+  .subject__select {
+    border-radius: 3.5px;
+    border-color: #000000;
+    border-style: solid;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    border-width: 2px;
+    width: 98%;
+    max-width: var(--max-width-all);
+  }
+  
+  .messageDiv {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width-all);
+  }
+  
+  .message__label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    padding-bottom: 0.3rem;
+  }
+  
+  .message__input {
+    border-radius: 3.5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2.5px;
+    max-width: var(--max-width-all);
+  }
+  
+  /*footer*/
+  .submit {
+    max-width: var(--max-width-all);
+    margin: 1rem 0.5rem 1rem 1rem;
+  }
+  
+  #button-blue {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    float: left;
+    width: 100%;
+    border: 4px solid rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: #e5e5e5;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 22px 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 1rem auto;
+    font-weight: 700;
+    z-index: 10;
+    max-width: var(--max-width-all);
+  }
+  
+  #button-blue:hover {
+    background-color: rgb(0, 0, 0);
+    color: #e7e7e7;
+  }
+  
+  @media screen and (min-width: 768px) {
+    :root {
+      --max-width-all: 550px;
+    }
+    .submit,
+    .message-area,
+    .container__selectors {
+      margin: auto;
+    }
+  
+    .messageDiv,
+    .subjectDiv{
+      margin: auto;
+      width: 550px;
+    }
+  }
+  
+  /*@media screen and (max-width: 800px) and (min-width: 335px) {
+    .message {
+      width: 200px;
+      height: 100px;
+    }
+      .btn {
+    width: 50%;
+    height:50px ;
+    height: 50px;
+  }

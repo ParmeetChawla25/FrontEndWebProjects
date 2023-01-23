@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact form</title>
+        <link rel="stylesheet" href="cf.css" />
+    </head>
+    <body>
+      <header class="header">
+        <a href="https://codepen.io/rahul_mp" target="_blank">
+          <img
+            class="header__logo"
+            src="https://drive.google.com/uc?export=view&id=1-mF0Uq5Vc_J2eEXboNc6DB0So7jFrz4n"
+            alt="Codepen"
+            width="21px"
+          />
+        </a>
+        <div class="header__text">
+          <p class="header__title">Contact Form</p>
+          <p class="header__note">Let's make a contact :)</p>
+        </div>
+        
+        <div class="header__links">
+          <a href="https://www.instagram.com/rahul__2k4/" target="_blank">
+            <img
+              class="insta logo"
+              src="https://drive.google.com/uc?export=view&id=1-Mrzs0-8dVjalP6F9UK6heRcFe6JzeXN"
+              alt="Instagram"
+              width="20px"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rahul-panchal-05610824a/"
+            target="_blank"
+          >
+            <img
+              class="lin logo"
+              src="https://drive.google.com/uc?export=view&id=1-MTFvNonniTEZJAIFtl9Y00gL_OGosus"
+              alt="LinkdIn"
+              width="20px"
+            />
+          </a>
+          <a href="https://discordapp.com/users/rahul_16#7843" target="_blank">
+            <img
+              class="discord logo"
+              src="https://drive.google.com/uc?export=view&id=1-bw-hlKLBmuCxDzJvNon09fblFH6Zuq8"
+              alt="Discord"
+              width="24px"
+            />
+          </a>
+          <a href="https://t.me/rahulpanchal0106" target="_blank">
+            <img
+              class="telegram logo"
+              src="https://drive.google.com/uc?export=view&id=1-evPMeogrGftTL5ju_jueKi_N93uPf5U"
+              alt="Telegram"
+              width="23px"
+            />
+          </a>
+          <a href="https://github.com/rahulpanchal0106" target="_blank">
+            <img
+              class="github logo"
+              src="https://drive.google.com/uc?export=view&id=1-RhibusgXxBrlfKxVWv-ZaqryEN3zhZB"
+              alt="Github"
+              width="23px"
+            />
+          </a>
+        </div>
+      </header>
+      <hr />
+      <main class="container">
+        <section class="list__inputs">
+          <div class="list__item">
+            <label class="item__label" for="fname">First Name</label>
+            <input
+              required
+              type="text"
+              name="fname"
+              class="item__input finame"
+              placeholder="Enter your first name"
+              value=""
+            />
+          </div>
+          <div class="list__item">
+            <label class="item__label" for="mname">Middle Name</label>
+            <input
+              required
+              type="text"
+              name="mname"
+              class="item__input miname"
+              placeholder="Enter your middle name"
+              value=""
+            />
+          </div>
+          <div class="list__item">
+            <label class="item__label" for="lname">Last Name</label>
+            <input
+              required
+              type="text"
+              name="lname"
+              class="item__input liname"
+              placeholder="Enter your last name"
+              value=""
+            />
+          </div>
+          <div class="list__item">
+            <label class="item__label ym">Your Email</label>
+            <input
+              type="email"
+              required
+              class="item__input mail"
+              name="email"
+              placeholder="Enter vaild email address"
+              value=""
+            />
+          </div>
+        </section>
+        <hr />
+        <section class="container__selectors">
+          <div class="selectors">
+            <p class="selectors__title">Your Gender</p>
+            <ul class="list">
+              <li>
+                <input required type="radio" name="gender" value="male" /> Male
+              </li>
+              <li>
+                <input required type="radio" name="gender" value="female" />
+                Female
+              </li>
+              <li>
+                <input required type="radio" name="gender" value="other" />
+                Other
+              </li>
+            </ul>
+          </div>
+          <div class="selectors">
+            <p class="selectors__title">And You are...</p>
+            <ul class="list">
+              <li>
+                <input required type="radio" name="wru" value="Student" /> a
+                Student
+              </li>  
+              <li>
+                <input required type="radio" name="wru" value="Employer" /> an
+                employer
+              </li>
+              <li>
+                <input required type="radio" name="wru" value="Employee" /> an
+                employee
+              </li>
+            </ul>
+          </div>
+        </section>
+        <hr />
+        <section class="message-area">
+          <div class="subjectDiv">
+            <p class="subject__label">Subject</p>
+            <select required name="Subject" class="subject__select">
+              <option value="" name="subject">--Select--</option>
+              <option required value="Job Inquiry" name="subject">
+                Job Inquiry
+              </option>
+              <option required value="Just a feedback" name="subject">
+                Just a feedback
+              </option>
+            </select>
+          </div>
+          <div class="messageDiv">
+            <p class="message__label">Your message</p>
+            <textarea
+              required
+              placeholder="Say hi to me! "
+              rows="8"
+              class="message__input"
+              value=""
+              name="message"
+            ></textarea>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="submit">
+          <input type="submit" value="SUBMIT" id="button-blue" />
+        </div>
+      </footer>
+    </body>
+  </html>
